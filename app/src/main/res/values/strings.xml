@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cairo_bank</string>
+    <string-array name="Gas_service_provider">
+        <item>Cairo of Gas</item>
+        <item>10th of Ramadan for Gas</item>
+        <item>ismalia for gas</item>
+    </string-array>
+
+
+    <string-array name="Spinner_Electricity_id">
+        <item>Cairo of Electricity</item>
+        <item>10th of Ramadan for Electricity</item>
+        <item>ismalia for Electricity</item>
+    </string-array>
+
+
+    <string-array name="Spinner_Internet_id">
+        <item>We</item>
+        <item>Vodafone</item>
+        <item>Orange</item>
+    </string-array>
+
+
+    <string-array name="Spinner_water_id">
+        <item>Cairo of Water</item>
+        <item>10th of Ramadan for Water</item>
+        <item>ismalia for Water</item>
+    </string-array>
+</resources>
+
+
+

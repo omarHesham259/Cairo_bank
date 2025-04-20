@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <!-- Top Orange Curve (Image) -->
+    <View
+        android:id="@+id/top_curve"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/ellipse_1__1_" />
+
+    <!-- Profile Box -->
+    <LinearLayout
+        android:id="@+id/profile_box"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:backgroundTint="@color/orange"
+        android:padding="10dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/boy" />
+
+        <TextView
+            android:id="@+id/username_gas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Omar Hesham"
+
+            android:textSize="16sp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <!-- Spinner: Service Provider -->
+    <Spinner
+        android:id="@+id/Gas_service_provider"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:entries="@array/Gas_service_provider"
+        android:layout_below="@id/top_curve"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <!-- EditText: User Number -->
+    <EditText
+        android:id="@+id/edit_user_number"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Gas_service_provider"
+        android:layout_marginTop="16dp"
+        android:hint="User Number"
+
+        android:background="@color/gray_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="number" />
+
+    <!-- EditText: Amount -->
+    <EditText
+        android:id="@+id/edit_amount"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_user_number"
+        android:layout_marginTop="16dp"
+        android:hint="Amount"
+        android:background="@color/gray_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/edit_amount"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pay"
+         />
+
+    <!-- Bottom Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/cairo" />
+
+</RelativeLayout>
